@@ -1,8 +1,8 @@
 package com.koreait.spring.basic;
 
 public class SamsungTv extends Tv {
-    public SamsungTv(){
-        super(new AppleSpeaker());
+    public SamsungTv(Speaker speaker){
+        super(speaker);
         System.out.println(" ---- SamsungTv Created ---- ");
     }
 
