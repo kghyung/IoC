@@ -1,22 +1,10 @@
 package com.koreait.spring.basic;
 
-public class SamsungTv {
-    private Speaker speaker;
-
+public class SamsungTv extends Tv {
     public SamsungTv(){
+        super(new AppleSpeaker());
         System.out.println(" ---- SamsungTv Created ---- ");
-        speaker = new AppleSpeaker();
     }
 
-    public void volumeUp(){
-        //소리크기 : ?
-        speaker.speakUp();
-        System.out.printf("소리크기 : %d\n",speaker.getVolume());
-    }
 
-    public void volumeDown(){
-        //소리크기 : ?
-        speaker.speakDown();
-        System.out.printf("소리크기 : %d\n",speaker.getVolume());
-    }
 }
